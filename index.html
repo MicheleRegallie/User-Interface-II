@@ -3,9 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style/index.css">
+    <title>Michele Regallie's Portfolio</title>
+    <!--what is needed:
+        1. navigation bar with About, Projects, and Contact (links)
+        2. Gallery of projects using flexbox
+        3. Info in the about (or placeholder text)
+        4. A 'my projects' button that links to page
+        5. A 'contact me button that links to page
+        6. social media links in the footer section-->
 </head>
+
 <body>
-    
+    <div class="container">
+        <header class="flex-container">
+<!--Flexbox for navigation-->
+            <nav>
+                <span class="logo">
+                    <p>Michele Renee</p>
+                </span>
+                <div class="links">
+                    <a class="nav-links" href="projects.html">Projects</a>
+                    <a class="nav-links" href="about.html">About</a>
+                    <a class="nav-links" href="contact.html">Contact</a>
+                </div>
+            </nav>
+<!--end of flexbox-->
+        </header>
+    <section class="header-info">
+<!--start of header image and text section-->
+        <div class="header-text">
+        <img class="header-image" src="images\michele_regallie_avatar.png" alt="cartoon avatar.">
+        <h1>Hi! I'm Michele Renee.</h1>
+        </div>
+<!--end of header image and text -->
+        <h3 class="tagline"> I love to design, code, and am passionate about creating products that uplift moods.</h3>
+        <a href="contact.html"><button class ="contact-btn" type="button">Contact Me</button></a>
+    </section>
+    <section class="skills-section">
+        <h2> Skills</h2>
+        <div class="skills">
+            <div class="design-skills card">
+                <img class="design" src="images\design-image.png" alt="Design Icon.">
+                <h3 class="skills-header">Design.</h3>
+                <p>I value easy to use and accessible experiences. </p>
+                <p>With my designs I use:</p>
+                <ul class="tools design-list">
+                    <li>Figma</li>
+                    <li>Journey Mapping</li>
+                    <li>Contextual Inquiry</li>
+                    <li>User Research</li>
+                    <li>Wireframing</li>
+                    <li>Prototyping</li>
+                    <li>UI Design</li>
+                </ul>
+            </div>
+            <div class="coding-skills card">
+                <img class="code" src="images\code-image.png" alt="Coding Icon.">
+                <h3 class="skills-header">Code.</h3>
+                <p>I love bringing designs to life by coding from scratch. </p>
+                <p>Tools & Coding languages I utilize are:</p>
+                <ul class="tools">
+                    <li>VS Code</li>
+                    <li>Codepen</li>
+                    <li>Github</li>
+                    <li>Terminal</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="projects">
+        <h2> Recent Work </h2>
+        <button class="btn projects-btn" type="button">view more projects</button>
+        <div class="gallery-row">
+<!--flexbox for gallery section, p text will be shown on hover of image-->
+            <div class="column1">
+                <img class="gallery-img" src="images\Lambda Mobile Dashboard.png" alt="Lambda Mobile Dashboard Project Thumbnail">
+                <h3 class="text">Lambda Mobile Dashboard</h3>
+            </div>
+            <div class="column2">
+                <img class="gallery-img" src="images\foodreaubanner.png" alt="Foodreau Project Thumbnail">
+                <h3 class="text">Foodreau</h3>
+            </div>
+        </div>
+        <!--text animation section-->
+        <div class="gallery-1 gallery-animation">
+            
+        </div>
+        <!--end of animation-->
+        <div class="gallery-2">
+            <img class="gallery-img2" src="images\QFTBbanner.png" alt="Quest for the Best Project Thumbnail.">
+        </div>
+        <div class="gallery-2 gallery-animation">
+            <h3>Coming Soon!</h3>
+        </div>
+    </section>
+    <footer>
+        <p> @Michele Renee 2020</p>
+        <div class="footer">
+            <a href="https://twitter.com/micheleregallie">
+                <button class="footer-btn btn" type="button">Twitter</button>
+            </a>
+            <a href="https://www.linkedin.com/in/micheleregallie/">
+                <button class="footer-btn btn" type="button">Linkedin</button>
+            </a>
+            <a href="https://dribbble.com/micheleregallie" class="footer-btn btn" >
+                <button class="footer-btn btn" type="button">Dribbble</button>
+            </a>
+        </div>
+    </footer>
+    </div>
 </body>
 </html>
